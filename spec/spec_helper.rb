@@ -14,7 +14,7 @@ end
 
 Capybara.default_driver = :chrome
 Capybara.app_host = "https://chgainz.trainheroic.com"
-Capybara.default_max_wait_time = 60
+Capybara.default_max_wait_time = 10
 
 RSpec.configure do |config|
   config.before(:each) do
