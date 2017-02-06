@@ -11,7 +11,7 @@ describe 'Coach free trial' do
 
         coach.start_free_trial
 
-        expect(page).to have_content 'No Teams'
+        expect(find('h3')).to have_content 'No Teams'
         expect(current_path).to eq '/admin/coach'
 
         coach.create_team

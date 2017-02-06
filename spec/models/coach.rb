@@ -22,7 +22,8 @@ class Coach
     fill_in 'phone',      with: @phone
     fill_in 'newOrgName', with: @organization_name
 
-    click_on 'Start Your Free Trial'
+    sleep 2
+    find('.coach-submit').click_on 'Start Your Free Trial'
   end
 
   def create_team
